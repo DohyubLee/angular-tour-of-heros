@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms'; // [(ngModel)]을 사용하려면 import해야함
 
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
 
-@NgModule({  //메타데이터
+@NgModule({  //중요 메타데이터
   declarations: [
     AppComponent,
     HeroesComponent
   ],
-  imports: [
+  imports: [  //
     BrowserModule,
     FormsModule
   ],
