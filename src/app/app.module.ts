@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms'; // [(ngModel)]을 사용하려면 
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 
 @NgModule({  //중요 메타데이터
   declarations: [
     AppComponent,
+    HeroDetailComponent,
     HeroesComponent
   ],
   imports: [  //
