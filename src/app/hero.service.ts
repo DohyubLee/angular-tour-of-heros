@@ -16,5 +16,10 @@ export class HeroService {
     this.messageService.add('HeroService: fetched heroes');
     return of(HEROES);  //of() 값을 하나씩 보내고 다 보내면 완료를 알림
   }
+  getHero(id: number): Observable<Hero> {
+    // Todo: send the message _after_ fetching the hero
+    this.messageService.add(`HeroService: fetched hero id=${id}`);
+    return of(HEROES.find(hero => hero.id === id));
+  }
 
 }

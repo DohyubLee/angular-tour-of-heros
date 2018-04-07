@@ -11,7 +11,7 @@ import { HeroService } from '../hero.service'; //서비스 사용가능하게됨
 export class HeroesComponent implements OnInit {
 
   heroes: Hero[];  //타입이 Hero[]인 변수선언
-  selectedHero: Hero;  //변수에 타입 지정
+  // selectedHero: Hero;  //변수에 타입 지정
 
   constructor(private heroService: HeroService) { } //말그대로 생성자 인자로 전달된값을 초기화해준다
 
@@ -26,8 +26,8 @@ export class HeroesComponent implements OnInit {
       });
   }
 
-  onSelect(hero: Hero): void { //Hero타입의 매개변수를 받고 반환형은 void인 함수
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void { //Hero타입의 매개변수를 받고 반환형은 void인 함수
+  //   this.selectedHero = hero;
+  // }
 
 }
